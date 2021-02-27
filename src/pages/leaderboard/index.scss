@@ -1,0 +1,140 @@
+.leaderboard-container{
+    width: 80%;
+    margin: 0 auto 40px auto;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 1400px;
+    overflow: hidden;
+}
+.title{
+    margin-top: 56px;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.02px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.85);
+}
+.sub-header {
+    border-bottom: solid 1px #000000;
+    padding-bottom: 34px;
+    div{
+        width: 50%;
+        display: inline-block;
+    }
+}
+.sub-header ul {
+    text-align: left;
+    list-style: none;
+    li{
+        word-break: break-word;
+        display: inline;
+        padding: 3px 10px;
+    }
+    li.active{
+        border-radius: 8px;
+        background-color: rgba(216, 216, 216, 0.27);
+        cursor: pointer;
+    }
+}
+.name-in-table{
+   height: 26px;
+   span{
+       position: relative;
+       text-decoration: underline;
+       top: -185px;
+   }
+}
+.logo{
+    background-color: red;
+    -webkit-mask: url('../../static/images/leader-board-icon.svg') no-repeat center;
+    mask: url('../../static/images/leader-board-icon.svg') no-repeat center;
+}
+.img-container{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+    padding-bottom: 45px;
+    >div{
+         display: inline-block;
+     }
+}
+.text-black{
+    color: black;
+}
+.pre-firstHex{
+    p{
+        margin-top: 0!important;
+    }
+}
+.firstHex{
+    transform: scale(0.8);
+    width: 200px;
+    top: 61px;
+    position: relative;
+    right: 39px;
+}
+.secondHex{
+    width: 200px;
+    transform: scale(0.8);
+    img{
+        transform: scale(1.7);
+    }
+    p{
+        transform: scale(1.7);
+    }
+}
+.thirdHex{
+    transform: scale(0.8);
+    top: 61px;
+    position: relative;
+    left: 39px;
+}
+.post-thirdHex{
+    p{
+        margin-top: 0!important;
+    }
+}
+.octagon-table-container{
+    display: inline-block;
+    width: 38px;
+    .outter {
+        position: relative;
+        top: -87px;
+        left: 0;
+        width: 202px;
+        height: 200px;
+        overflow: hidden;
+        z-index: 10;
+        transform: scale(0.15);
+        right: -83px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .firstHex {
+        transform: scale(0.6);
+        width: 125px;
+        top: 35px;
+        right: 20px;
+    }
+    .secondHex{
+        transform: scale(0.6);
+    }
+    .thirdHex{
+        transform: scale(0.6);
+        width: 125px;
+        top: 34px;
+        left: 64px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .img-container > div {
+        display: block;
+    }
+    .firstHex {
+        top: 0;
+    }
+    .thirdHex {
+        left: 0;
+    }
+}

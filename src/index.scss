@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('./static/fonts/Yekan.eot'); /* IE9 Compat Modes */
+    src: url('./static/fonts/Yekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./static/fonts/Yekan.woff2') format('woff2'), /* Modern Browsers */
+    url('./static/fonts/Yekan.woff') format('woff'), /* Modern Browsers */
+    url('./static/fonts/Yekan.otf') format('opentype'), /* Open Type Font */
+    url('./static/fonts/Yekan.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0!important;
+    font-family: Yekan;
+    text-align: right;
+    direction: rtl;
+}
+.table-bordered{
+    width: 100%;
+    border: 1px solid #ededed;
+    margin-top: 40px;
+    border-collapse: collapse;
+    thead{
+        tr{
+            th{
+                padding: 13px 10px;
+            }
+        }
+    }
+    tbody{
+        tr{
+            border-top: 1px solid #ededed;
+            td{
+                padding: 13px 10px;
+            }
+        }
+    }
+}
+.mt-0{
+    margin-top: 0!important;
+}
